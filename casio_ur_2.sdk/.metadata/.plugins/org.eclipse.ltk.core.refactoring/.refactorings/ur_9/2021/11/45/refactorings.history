@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ur_9/src/interrupt_counter_tut_2D.c&apos; to &apos;casio_watch.c&apos;" description="Rename resource &apos;interrupt_counter_tut_2D.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/interrupt_counter_tut_2D.c" name="casio_watch.c" stamp="1636919663348" updateReferences="true"/>
+</session>

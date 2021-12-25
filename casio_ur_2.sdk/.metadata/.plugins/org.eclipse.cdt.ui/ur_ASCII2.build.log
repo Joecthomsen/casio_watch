@@ -1,0 +1,770 @@
+16:23:01 **** Incremental Build of configuration Debug for project ur_ASCII2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/casio_watch.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/casio_watch.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ur_3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/casio_watch.d" -MT"src/casio_watch.o" -o "src/casio_watch.o" "../src/casio_watch.c"
+In file included from ../src/casio_watch.c:34:0:
+../../ur_3_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:16:13: error: 'CLOCK' undeclared here (not in a function); did you mean 'F_LOCK'?
+ int state = CLOCK;
+             ^~~~~
+             F_LOCK
+../src/timeVariables.h:17:18: error: 'OFF' undeclared here (not in a function)
+ int alarmStatus =OFF;
+                  ^~~
+../src/timeVariables.h:19:16: error: 'TWENTYFOUR_HOUR_TIME_FORMATE' undeclared here (not in a function)
+ int timemode = TWENTYFOUR_HOUR_TIME_FORMATE;
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/timeVariables.h:23:13: error: 'Jan' undeclared here (not in a function)
+ int month = Jan;
+             ^~~
+../src/timeVariables.h:26:11: error: 'Mon' undeclared here (not in a function)
+ int day = Mon;
+           ^~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:16:5: error: redefinition of 'state'
+ int state = CLOCK;
+     ^~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:16:5: note: previous definition of 'state' was here
+ int state = CLOCK;
+     ^~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:17:5: error: redefinition of 'alarmStatus'
+ int alarmStatus =OFF;
+     ^~~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:17:5: note: previous definition of 'alarmStatus' was here
+ int alarmStatus =OFF;
+     ^~~~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:19:5: error: redefinition of 'timemode'
+ int timemode = TWENTYFOUR_HOUR_TIME_FORMATE;
+     ^~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:19:5: note: previous definition of 'timemode' was here
+ int timemode = TWENTYFOUR_HOUR_TIME_FORMATE;
+     ^~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:22:5: error: redefinition of 'year'
+ int year = 2000;
+     ^~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:22:5: note: previous definition of 'year' was here
+ int year = 2000;
+     ^~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:23:5: error: redefinition of 'month'
+ int month = Jan;
+     ^~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:23:5: note: previous definition of 'month' was here
+ int month = Jan;
+     ^~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:24:5: error: redefinition of 'date'
+ int date = 01;
+     ^~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:24:5: note: previous definition of 'date' was here
+ int date = 01;
+     ^~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:26:5: error: redefinition of 'day'
+ int day = Mon;
+     ^~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:26:5: note: previous definition of 'day' was here
+ int day = Mon;
+     ^~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:30:6: error: redefinition of 'sec0'
+  int sec0 = 0;
+      ^~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:30:6: note: previous definition of 'sec0' was here
+  int sec0 = 0;
+      ^~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:31:6: error: redefinition of 'sec10'
+  int sec10 = 0;
+      ^~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:31:6: note: previous definition of 'sec10' was here
+  int sec10 = 0;
+      ^~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:32:6: error: redefinition of 'minut0'
+  int minut0 = 0;
+      ^~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:32:6: note: previous definition of 'minut0' was here
+  int minut0 = 0;
+      ^~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:33:6: error: redefinition of 'minut10'
+  int minut10 = 0;
+      ^~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:33:6: note: previous definition of 'minut10' was here
+  int minut10 = 0;
+      ^~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:34:6: error: redefinition of 'hour0'
+  int hour0 = 0;
+      ^~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:34:6: note: previous definition of 'hour0' was here
+  int hour0 = 0;
+      ^~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:35:6: error: redefinition of 'hour10'
+  int hour10 = 0;
+      ^~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:35:6: note: previous definition of 'hour10' was here
+  int hour10 = 0;
+      ^~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:41:6: error: redefinition of 'alarmSec0'
+  int alarmSec0 = 0;
+      ^~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:41:6: note: previous definition of 'alarmSec0' was here
+  int alarmSec0 = 0;
+      ^~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:42:6: error: redefinition of 'alarmSec10'
+  int alarmSec10 = 0;
+      ^~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:42:6: note: previous definition of 'alarmSec10' was here
+  int alarmSec10 = 0;
+      ^~~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:43:6: error: redefinition of 'alarmMinut0'
+  int alarmMinut0 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:43:6: note: previous definition of 'alarmMinut0' was here
+  int alarmMinut0 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:44:6: error: redefinition of 'alarmMinut10'
+  int alarmMinut10 = 0;
+      ^~~~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:44:6: note: previous definition of 'alarmMinut10' was here
+  int alarmMinut10 = 0;
+      ^~~~~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:45:6: error: redefinition of 'alarmHour0'
+  int alarmHour0 = 0;
+      ^~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:45:6: note: previous definition of 'alarmHour0' was here
+  int alarmHour0 = 0;
+      ^~~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:46:6: error: redefinition of 'alarmHour10'
+  int alarmHour10 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:46:6: note: previous definition of 'alarmHour10' was here
+  int alarmHour10 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:47:6: error: redefinition of 'alarmMode'
+  int alarmMode = 0;
+      ^~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:47:6: note: previous definition of 'alarmMode' was here
+  int alarmMode = 0;
+      ^~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:50:6: error: redefinition of 'swMinut10'
+  int swMinut10 = 0;
+      ^~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:50:6: note: previous definition of 'swMinut10' was here
+  int swMinut10 = 0;
+      ^~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:51:6: error: redefinition of 'swMinut0'
+  int swMinut0 = 0;
+      ^~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:51:6: note: previous definition of 'swMinut0' was here
+  int swMinut0 = 0;
+      ^~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:52:6: error: redefinition of 'swSec10'
+  int swSec10 = 0;
+      ^~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:52:6: note: previous definition of 'swSec10' was here
+  int swSec10 = 0;
+      ^~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:53:6: error: redefinition of 'swSec0'
+  int swSec0 = 0;
+      ^~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:53:6: note: previous definition of 'swSec0' was here
+  int swSec0 = 0;
+      ^~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:54:6: error: redefinition of 'swCenSec10'
+  int swCenSec10 = 0;
+      ^~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:54:6: note: previous definition of 'swCenSec10' was here
+  int swCenSec10 = 0;
+      ^~~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:55:6: error: redefinition of 'swCenSec0'
+  int swCenSec0 = 0;
+      ^~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:55:6: note: previous definition of 'swCenSec0' was here
+  int swCenSec0 = 0;
+      ^~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:58:6: error: redefinition of 'lapMinute10'
+  int lapMinute10 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:58:6: note: previous definition of 'lapMinute10' was here
+  int lapMinute10 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:59:6: error: redefinition of 'lapMinute0'
+  int lapMinute0 = 0;
+      ^~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:59:6: note: previous definition of 'lapMinute0' was here
+  int lapMinute0 = 0;
+      ^~~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:60:6: error: redefinition of 'lapSec10'
+  int lapSec10 = 0;
+      ^~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:60:6: note: previous definition of 'lapSec10' was here
+  int lapSec10 = 0;
+      ^~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:61:6: error: redefinition of 'lapSec0'
+  int lapSec0 = 0;
+      ^~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:61:6: note: previous definition of 'lapSec0' was here
+  int lapSec0 = 0;
+      ^~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:62:6: error: redefinition of 'lapCenSec10'
+  int lapCenSec10 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:62:6: note: previous definition of 'lapCenSec10' was here
+  int lapCenSec10 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/printToSerial.h:12:0,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:63:6: error: redefinition of 'lapCenSec0'
+  int lapCenSec0 = 0;
+      ^~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:63:6: note: previous definition of 'lapCenSec0' was here
+  int lapCenSec0 = 0;
+      ^~~~~~~~~~
+In file included from ../src/casio_watch.c:36:0:
+../src/printToSerial.h: In function 'printTime':
+../src/printToSerial.h:21:3: warning: implicit declaration of function 'printAsciiNumber'; did you mean 'printTime'? [-Wimplicit-function-declaration]
+   printAsciiNumber(hour10, hour0, minut10, minut0, sec10,sec0);
+   ^~~~~~~~~~~~~~~~
+   printTime
+../src/printToSerial.h:28:94: warning: implicit declaration of function 'getDay'; did you mean 'getopt'? [-Wimplicit-function-declaration]
+    xil_printf("%i : %i%i : %i%i PM  %s %i %s %d",hour12format, minut10,minut0, sec10, sec0 , getDay(day), getDate(), getMonth(month), year);
+                                                                                              ^~~~~~
+                                                                                              getopt
+../src/printToSerial.h:28:107: warning: implicit declaration of function 'getDate'; did you mean 'getopt'? [-Wimplicit-function-declaration]
+    xil_printf("%i : %i%i : %i%i PM  %s %i %s %d",hour12format, minut10,minut0, sec10, sec0 , getDay(day), getDate(), getMonth(month), year);
+                                                                                                           ^~~~~~~
+                                                                                                           getopt
+../src/printToSerial.h:28:118: warning: implicit declaration of function 'getMonth'; did you mean 'getopt'? [-Wimplicit-function-declaration]
+    xil_printf("%i : %i%i : %i%i PM  %s %i %s %d",hour12format, minut10,minut0, sec10, sec0 , getDay(day), getDate(), getMonth(month), year);
+                                                                                                                      ^~~~~~~~
+                                                                                                                      getopt
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h: At top level:
+../src/timeVariables.h:16:5: error: redefinition of 'state'
+ int state = CLOCK;
+     ^~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:16:5: note: previous definition of 'state' was here
+ int state = CLOCK;
+     ^~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:17:5: error: redefinition of 'alarmStatus'
+ int alarmStatus =OFF;
+     ^~~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:17:5: note: previous definition of 'alarmStatus' was here
+ int alarmStatus =OFF;
+     ^~~~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:19:5: error: redefinition of 'timemode'
+ int timemode = TWENTYFOUR_HOUR_TIME_FORMATE;
+     ^~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:19:5: note: previous definition of 'timemode' was here
+ int timemode = TWENTYFOUR_HOUR_TIME_FORMATE;
+     ^~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:22:5: error: redefinition of 'year'
+ int year = 2000;
+     ^~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:22:5: note: previous definition of 'year' was here
+ int year = 2000;
+     ^~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:23:5: error: redefinition of 'month'
+ int month = Jan;
+     ^~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:23:5: note: previous definition of 'month' was here
+ int month = Jan;
+     ^~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:24:5: error: redefinition of 'date'
+ int date = 01;
+     ^~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:24:5: note: previous definition of 'date' was here
+ int date = 01;
+     ^~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:26:5: error: redefinition of 'day'
+ int day = Mon;
+     ^~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:26:5: note: previous definition of 'day' was here
+ int day = Mon;
+     ^~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:30:6: error: redefinition of 'sec0'
+  int sec0 = 0;
+      ^~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:30:6: note: previous definition of 'sec0' was here
+  int sec0 = 0;
+      ^~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:31:6: error: redefinition of 'sec10'
+  int sec10 = 0;
+      ^~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:31:6: note: previous definition of 'sec10' was here
+  int sec10 = 0;
+      ^~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:32:6: error: redefinition of 'minut0'
+  int minut0 = 0;
+      ^~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:32:6: note: previous definition of 'minut0' was here
+  int minut0 = 0;
+      ^~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:33:6: error: redefinition of 'minut10'
+  int minut10 = 0;
+      ^~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:33:6: note: previous definition of 'minut10' was here
+  int minut10 = 0;
+      ^~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:34:6: error: redefinition of 'hour0'
+  int hour0 = 0;
+      ^~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:34:6: note: previous definition of 'hour0' was here
+  int hour0 = 0;
+      ^~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:35:6: error: redefinition of 'hour10'
+  int hour10 = 0;
+      ^~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:35:6: note: previous definition of 'hour10' was here
+  int hour10 = 0;
+      ^~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:41:6: error: redefinition of 'alarmSec0'
+  int alarmSec0 = 0;
+      ^~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:41:6: note: previous definition of 'alarmSec0' was here
+  int alarmSec0 = 0;
+      ^~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:42:6: error: redefinition of 'alarmSec10'
+  int alarmSec10 = 0;
+      ^~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:42:6: note: previous definition of 'alarmSec10' was here
+  int alarmSec10 = 0;
+      ^~~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:43:6: error: redefinition of 'alarmMinut0'
+  int alarmMinut0 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:43:6: note: previous definition of 'alarmMinut0' was here
+  int alarmMinut0 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:44:6: error: redefinition of 'alarmMinut10'
+  int alarmMinut10 = 0;
+      ^~~~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:44:6: note: previous definition of 'alarmMinut10' was here
+  int alarmMinut10 = 0;
+      ^~~~~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:45:6: error: redefinition of 'alarmHour0'
+  int alarmHour0 = 0;
+      ^~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:45:6: note: previous definition of 'alarmHour0' was here
+  int alarmHour0 = 0;
+      ^~~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:46:6: error: redefinition of 'alarmHour10'
+  int alarmHour10 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:46:6: note: previous definition of 'alarmHour10' was here
+  int alarmHour10 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:47:6: error: redefinition of 'alarmMode'
+  int alarmMode = 0;
+      ^~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:47:6: note: previous definition of 'alarmMode' was here
+  int alarmMode = 0;
+      ^~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:50:6: error: redefinition of 'swMinut10'
+  int swMinut10 = 0;
+      ^~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:50:6: note: previous definition of 'swMinut10' was here
+  int swMinut10 = 0;
+      ^~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:51:6: error: redefinition of 'swMinut0'
+  int swMinut0 = 0;
+      ^~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:51:6: note: previous definition of 'swMinut0' was here
+  int swMinut0 = 0;
+      ^~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:52:6: error: redefinition of 'swSec10'
+  int swSec10 = 0;
+      ^~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:52:6: note: previous definition of 'swSec10' was here
+  int swSec10 = 0;
+      ^~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:53:6: error: redefinition of 'swSec0'
+  int swSec0 = 0;
+      ^~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:53:6: note: previous definition of 'swSec0' was here
+  int swSec0 = 0;
+      ^~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:54:6: error: redefinition of 'swCenSec10'
+  int swCenSec10 = 0;
+      ^~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:54:6: note: previous definition of 'swCenSec10' was here
+  int swCenSec10 = 0;
+      ^~~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:55:6: error: redefinition of 'swCenSec0'
+  int swCenSec0 = 0;
+      ^~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:55:6: note: previous definition of 'swCenSec0' was here
+  int swCenSec0 = 0;
+      ^~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:58:6: error: redefinition of 'lapMinute10'
+  int lapMinute10 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:58:6: note: previous definition of 'lapMinute10' was here
+  int lapMinute10 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:59:6: error: redefinition of 'lapMinute0'
+  int lapMinute0 = 0;
+      ^~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:59:6: note: previous definition of 'lapMinute0' was here
+  int lapMinute0 = 0;
+      ^~~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:60:6: error: redefinition of 'lapSec10'
+  int lapSec10 = 0;
+      ^~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:60:6: note: previous definition of 'lapSec10' was here
+  int lapSec10 = 0;
+      ^~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:61:6: error: redefinition of 'lapSec0'
+  int lapSec0 = 0;
+      ^~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:61:6: note: previous definition of 'lapSec0' was here
+  int lapSec0 = 0;
+      ^~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:62:6: error: redefinition of 'lapCenSec10'
+  int lapCenSec10 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:62:6: note: previous definition of 'lapCenSec10' was here
+  int lapCenSec10 = 0;
+      ^~~~~~~~~~~
+In file included from ../src/casio_watch.c:37:0:
+../src/timeVariables.h:63:6: error: redefinition of 'lapCenSec0'
+  int lapCenSec0 = 0;
+      ^~~~~~~~~~
+In file included from ../src/enumerators.h:11:0,
+                 from ../src/printToSerial.h:11,
+                 from ../src/casio_watch.c:36:
+../src/timeVariables.h:63:6: note: previous definition of 'lapCenSec0' was here
+  int lapCenSec0 = 0;
+      ^~~~~~~~~~
+../src/casio_watch.c:134:7: error: conflicting types for 'getMonth'
+ char *getMonth(int month);
+       ^~~~~~~~
+In file included from ../src/casio_watch.c:36:0:
+../src/printToSerial.h:28:118: note: previous implicit declaration of 'getMonth' was here
+    xil_printf("%i : %i%i : %i%i PM  %s %i %s %d",hour12format, minut10,minut0, sec10, sec0 , getDay(day), getDate(), getMonth(month), year);
+                                                                                                                      ^~~~~~~~
+../src/casio_watch.c:140:7: error: conflicting types for 'getDay'
+ char *getDay(int day);
+       ^~~~~~
+In file included from ../src/casio_watch.c:36:0:
+../src/printToSerial.h:28:94: note: previous implicit declaration of 'getDay' was here
+    xil_printf("%i : %i%i : %i%i PM  %s %i %s %d",hour12format, minut10,minut0, sec10, sec0 , getDay(day), getDate(), getMonth(month), year);
+                                                                                              ^~~~~~
+In file included from ../../ur_3_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/casio_watch.c:29:
+../src/casio_watch.c: In function 'reInitTimer':
+../../ur_3_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/casio_watch.c:1016:37: note: in expansion of macro 'XST_FAILURE'
+    if(status != XST_SUCCESS) return XST_FAILURE;
+                                     ^~~~~~~~~~~
+../src/casio_watch.c:1013:6: note: declared here
+ void reInitTimer(){
+      ^~~~~~~~~~~
+In file included from ../../ur_3_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/casio_watch.c:29:
+../../ur_3_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/casio_watch.c:1023:37: note: in expansion of macro 'XST_FAILURE'
+    if(status != XST_SUCCESS) return XST_FAILURE;
+                                     ^~~~~~~~~~~
+../src/casio_watch.c:1013:6: note: declared here
+ void reInitTimer(){
+      ^~~~~~~~~~~
+../src/casio_watch.c: At top level:
+../src/casio_watch.c:1477:6: warning: conflicting types for 'printAsciiNumber'
+ void printAsciiNumber(int hour10, int hour0, int min10, int min0, int sec10, int sec0){
+      ^~~~~~~~~~~~~~~~
+In file included from ../src/casio_watch.c:36:0:
+../src/printToSerial.h:21:3: note: previous implicit declaration of 'printAsciiNumber' was here
+   printAsciiNumber(hour10, hour0, minut10, minut0, sec10,sec0);
+   ^~~~~~~~~~~~~~~~
+make: *** [src/casio_watch.o] Fejl 1
+
+16:23:02 Build Finished (took 515ms)
+

@@ -1,0 +1,50 @@
+15:55:29 **** Auto Build of configuration Debug for project ur_8 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/interrupt_counter_tut_2D.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupt_counter_tut_2D.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ur_3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interrupt_counter_tut_2D.d" -MT"src/interrupt_counter_tut_2D.o" -o "src/interrupt_counter_tut_2D.o" "../src/interrupt_counter_tut_2D.c"
+In file included from ../src/interrupt_counter_tut_2D.c:34:0:
+../../ur_3_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from ../../ur_3_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/interrupt_counter_tut_2D.c:29:
+../src/interrupt_counter_tut_2D.c: In function 'reInitTimer':
+../../ur_3_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/interrupt_counter_tut_2D.c:923:37: note: in expansion of macro 'XST_FAILURE'
+    if(status != XST_SUCCESS) return XST_FAILURE;
+                                     ^~~~~~~~~~~
+../src/interrupt_counter_tut_2D.c:920:6: note: declared here
+ void reInitTimer(){
+      ^~~~~~~~~~~
+In file included from ../../ur_3_bsp/ps7_cortexa9_0/include/xgpio.h:135:0,
+                 from ../src/interrupt_counter_tut_2D.c:29:
+../../ur_3_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/interrupt_counter_tut_2D.c:930:37: note: in expansion of macro 'XST_FAILURE'
+    if(status != XST_SUCCESS) return XST_FAILURE;
+                                     ^~~~~~~~~~~
+../src/interrupt_counter_tut_2D.c:920:6: note: declared here
+ void reInitTimer(){
+      ^~~~~~~~~~~
+'Finished building: ../src/interrupt_counter_tut_2D.c'
+' '
+'Building target: ur_8.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ur_3_bsp/ps7_cortexa9_0/lib -o "ur_8.elf"  ./src/interrupt_counter_tut_2D.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ur_8.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ur_8.elf  |tee "ur_8.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  42368	   2832	  22856	  68056	  109d8	ur_8.elf
+'Finished building: ur_8.elf.size'
+' '
+
+15:55:30 Build Finished (took 1s.63ms)
+

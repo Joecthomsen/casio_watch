@@ -1,0 +1,5 @@
+19:58:34 **** Incremental Build of configuration Debug for project ur_ASCII ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ingenting at gøre for 'main-build'.

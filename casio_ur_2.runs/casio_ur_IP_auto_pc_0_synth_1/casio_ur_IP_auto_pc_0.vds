@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Thu Nov 11 16:55:12 2021
+# Process ID: 20796
+# Current directory: C:/vivado_projects/casio_ur_2/casio_ur_2.runs/casio_ur_IP_auto_pc_0_synth_1
+# Command line: vivado.exe -log casio_ur_IP_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source casio_ur_IP_auto_pc_0.tcl
+# Log file: C:/vivado_projects/casio_ur_2/casio_ur_2.runs/casio_ur_IP_auto_pc_0_synth_1/casio_ur_IP_auto_pc_0.vds
+# Journal file: C:/vivado_projects/casio_ur_2/casio_ur_2.runs/casio_ur_IP_auto_pc_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source casio_ur_IP_auto_pc_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP casio_ur_IP_auto_pc_0, cache-ID = a202b98cb7c79d1b.
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 11 16:55:17 2021...

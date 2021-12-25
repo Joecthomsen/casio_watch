@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Local" key="casio_ur_IP_wrapper_hw_platform_0-target"/>
+	<item value="Auto Detect" key="casio_ur_IP_wrapper_hw_platform_0-device"/>
+	<item value="casio_ur_IP_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="" key="casio_ur_IP_wrapper_hw_platform_0-bmmFile"/>
+	<item value="false" key="casio_ur_IP_wrapper_hw_platform_0-partial_bit"/>
+	<item value="casio_ur_IP_wrapper.bit" key="casio_ur_IP_wrapper_hw_platform_0-bitFile"/>
+</section>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ur_11/src/ascii&apos; to &apos;ascii.h&apos;" description="Rename resource &apos;ascii&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ascii" name="ascii.h" stamp="1637062135302" updateReferences="true"/>
+</session>
